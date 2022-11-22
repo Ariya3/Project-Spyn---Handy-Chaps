@@ -12,13 +12,16 @@ while 1
     distance = brick.UltrasonicDist(2);
     touch = brick.TouchPressed(3);
    
-    if (distance <= 50)
+    if (distance <= 35)
         brick.MoveMotor('B', 0);
         brick.MoveMotor('A', -50);
         brick.MoveMotor('C', -50);
         disp(distance);
 
-    elseif (distance > 50)
+    elseif (distance > 35)
+        brick.MoveMotor('A', -50);
+        brick.MoveMotor('C', -50);
+        pause(1);
         brick.MoveMotor('A', -50);
         brick.MoveMotor('C', 50);
         pause(1.5);
@@ -36,10 +39,17 @@ while 1
         pause(.25);
         brick.MoveMotor('A', 50);
         brick.MoveMotor('C', -50);
-        pause(1);
+        pause(1.5);
     end
 
-    if (color == 5)
+    if (color == 5) %stop sign
+        brick.StopAllMotors();
+        pause(1);
+        brick.MoveMotor('A', -50);
+        brick.MoveMotor('C', -50);
+        disp(color);
+
+    elseif (color == 2) %exit
         brick.MoveMotor('A', 0);
         brick.MoveMotor('C', 0);
         break;

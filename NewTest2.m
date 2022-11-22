@@ -8,10 +8,11 @@
 % brown = 7
 
 while 1
-    color = brick.ColorCode(1)
+    color = brick.ColorCode(1);
+    touch = brick.TouchPressed(3);
    
     if (color == 5)
-        
+
          brick.StopAllMotors();
          pause(2);
          brick.MoveMotor('A', -50);
@@ -23,7 +24,7 @@ while 1
         brick.MoveMotor('C', -50);
         disp(color);
 
-    elseif (color == 6)
+    elseif (touch == 1)
         brick.MoveMotor('A', -50);
         brick.MoveMotor('C', -50);
         disp(color);
