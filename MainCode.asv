@@ -17,7 +17,7 @@ while 1
     end
     
     %---------------------------------
-    if (distance > 20)  %gap
+    if (distance > 5)  %gap
         
         pause(0.85);
         brick.StopMotor('A');
