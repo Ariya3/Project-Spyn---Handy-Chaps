@@ -21,7 +21,7 @@ while 1
     elseif (distance > 50)
         brick.MoveMotor('A', -50);
         brick.MoveMotor('C', 50);
-        pause(0.65);
+        pause(1.5);
         brick.MoveMotor('A', -50);
         brick.MoveMotor('C', -50);
         pause(.25);
@@ -36,7 +36,7 @@ while 1
         pause(.25);
         brick.MoveMotor('A', 50);
         brick.MoveMotor('C', -50);
-        pause(.5);
+        pause(1);
     end
 
     if (color == 5)
