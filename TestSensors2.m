@@ -14,7 +14,7 @@ color = brick.ColorCode(1);
 
 %run forward
 brick.MoveMotor('A', -50);
-brick.MoveMotor('C', - 50);
+brick.MoveMotor('C', -50);
 
     %turn left
         %push button
