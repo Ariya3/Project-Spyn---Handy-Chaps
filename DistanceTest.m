@@ -125,3 +125,10 @@ while 1
 end
 
 CloseKeyboard();
+
+% rightWheel = c 
+% left = a 
+% list = b 
+% color = 1
+% dist = 2
+% touch = 3
