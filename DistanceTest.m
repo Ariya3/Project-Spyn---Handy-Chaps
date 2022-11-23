@@ -52,7 +52,7 @@ while 1
                     brick.MoveMotor('B', -25);
                     disp ('S Pressed!')
 
-                    % Pause and End Functions
+                    % Pause
                 case 0
                     brick.MoveMotor('A', 0);
                     brick.MoveMotor('B', 0);
@@ -60,6 +60,7 @@ while 1
                     brick.MoveMotor('D', 0);
                     disp ('No Key Pressed!');
 
+                    %switches back to auton
                 case'p'
                     brick.MoveMotor('A', -50);
                     brick.MoveMotor('C', -50);
