@@ -17,7 +17,7 @@ while 1
     disp(color);
 
     %% starts keyboard control
-    if(color == 7)
+    if(color == 2)
         color = brick.ColorCode(1);
         while 1
             pause(0.1);
@@ -83,7 +83,7 @@ while 1
         disp(color);
 
     %break condition
-    elseif (color == 3) %exit
+    elseif (color == 6) %exit %% add second color
         brick.MoveMotor('A', 0);
         brick.MoveMotor('C', 0);
         break;
